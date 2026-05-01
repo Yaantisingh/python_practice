@@ -7,18 +7,17 @@
 #Below 60 : "F"
 #here we used a basic if else statement to carry out marks and all.
 
-score=float(input("enter score"))
-if score>=90:
+score = float(input("enter score"))
+
+if score < 0 or score > 100:
+    print("Invalid score")
+elif score >= 90:
     print("A")
-
-elif score>=80:
+elif score >= 80:
     print("B")
-
-elif score>=70:
+elif score >= 70:
     print("C")
-
-elif score>=60:
+elif score >= 60:
     print("D")
-
 else:
     print("F")
